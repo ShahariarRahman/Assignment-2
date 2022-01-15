@@ -86,3 +86,40 @@ body{
 .header-image-border-circle img{
     position: absolute
 }
+
+/*-----------------------------*\
+  Other website:  
+\*-----------------------------*/
+
+.websites-container{
+    margin: 120px;
+}
+.websites{
+    margin-top:7px;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-gap: 50px;
+    /* border: 3px solid gray; */
+    border: 2px solid #AAAAAA;
+    border-left: #AAAAAA;
+    border-right: #AAAAAA;
+}
+.website{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}
+
+/*-----------------------------*\
+  Items Collection:  
+\*-----------------------------*/
+
+.collection-items-header h2{
+    font-size: 28px;
+    text-align: center;
+}
+.items img{
+    width: 300px;
+    height: 256px;
+}
