@@ -124,7 +124,6 @@ body{
 .collection-items-header h2{
     font-size: 28px;
     text-align: center;
-    margin-bottom: 40px;
 }
 .items{
     display: grid;
@@ -154,24 +153,72 @@ body{
 /* payment */
 .payment-container{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    padding-bottom: 87px;
 }
 .payment-image img{
     border-radius: 10px;
-    margin-right:80px ;
+    width: 500px;
 }
 
 .payment-header{
     font-size: 30px;
 }
+.payment-header h2{
+    font-size: 30px;
+    margin-bottom: 500;
+}
 .payment-methods{
     display: grid;
     grid-template-columns: repeat(5,1fr);
-
+    grid-gap: 10px;
+}
+.payment-method{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.payment-method .fab{
+   color: rgba(224, 44, 109, 0.87);
 }
 .payment-methods h3{
     font-size: 16px;
 }
 .payment-methods p{
     font-size: 60px;
+    margin: 0;
+}
+footer{
+    padding:50px 589px;
+    background-color:#0A0826;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-header{
+    font-size: 24px;
+    color: white;
+}
+.copyright p{
+    font-size: 14px;
+    color: white;
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.social-link{
+    display: flex;
+}
+.social-link a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 32px;
+    height: 32px;
+    margin-right: 16px;
+    border-radius: 50%;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
 }
