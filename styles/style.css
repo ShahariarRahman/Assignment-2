@@ -12,8 +12,25 @@ body{
 /*-----------------------------*\
   # Navigation Bar Start:  
 \*-----------------------------*/
-
-.navbar
+.nav-bar-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 87px 120px;
+}
+.page-title{
+    font-size: 24px;
+}
+.nav-bar{
+    display: flex;
+    list-style: none;
+}
+.nav-bar li a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    padding-right: 34px;
+}
 
 
 
