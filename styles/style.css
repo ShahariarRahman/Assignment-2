@@ -117,7 +117,6 @@ body{
     display: grid;
     grid-template-columns: repeat(7,1fr);
     grid-gap: 50px;
-    
     border: 1px solid ;
     border-image: linear-gradient(90deg, rgba(192, 204, 218, 0.1) 0%, rgba(192, 204, 218, 0.6) 50.38%, rgba(192, 204, 218, 0.1) 100%);
     border-image-slice: 1;
