@@ -4,8 +4,8 @@
 /* Body */
 body{
     margin: 0;
-    font-family: 'Inter', sans-serif;
-    font-family: 'Manrope', sans-serif;
+    /* font-family: 'Inter', sans-serif; */
+    /* font-family: 'Manrope', sans-serif; */
     font-family: 'Poppins', sans-serif;
     color: #3A3A3A;
 }
@@ -73,8 +73,8 @@ body{
     width: 196px;
     height: 46px;
     border-radius: 40px;
-    border: 1px solid #E02C6D;
     background-color: #E02C6D;
+    border: 1px solid #E02C6D;
     transition: width 0.5s, background-color 0.5s;
 }
 .header-texts button:hover{
@@ -104,15 +104,14 @@ body{
     position: absolute;
 }
 
-/*-----------------------------*\
-  Other website:  
-\*-----------------------------*/
 
+/*-----------------*\
+  Websites Styles: 
+\*-----------------*/
 .websites-container{
-    margin: 150px 110px;
+    margin: 177px 110px;
 }
 .websites{
-    margin-top:7px;
     display: grid;
     grid-template-columns: repeat(7,1fr);
     grid-gap: 50px;
@@ -128,9 +127,14 @@ body{
     height: 100px;
 }
 
-/*-----------------------------*\
-  Items Collection:  
-\*-----------------------------*/
+/*---------------------------------*\
+  Popular Collection Items Styles::  
+\*---------------------------------*/
+.collection-items-header h2{
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 70px;
+}
 .collection-items{
     margin:0 120px;
     display: flex;
@@ -138,10 +142,6 @@ body{
     align-items: center;
 }
 
-.collection-items-header h2{
-    font-size: 28px;
-    text-align: center;
-}
 .items{
     display: grid;
     grid-template-columns:repeat(3,1fr);
@@ -166,12 +166,13 @@ body{
 .see-more{
     display: flex;
     justify-content: flex-end;
-    margin: 50px 0;
+    margin-top: 50px;
+    margin-right: 10px;
 }
 .see-more a{
     text-decoration: none;
     color: rgba(224, 44, 109, 0.87);
-    font-size :16px;
+    font-size: 20px;
 }
 
 /*-----------------------------*\
