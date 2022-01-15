@@ -117,7 +117,7 @@ body{
     grid-gap: 50px;
     
     border: 1px solid ;
-    border-image: linear-gradient(90deg, rgba(192, 204, 218, 0.1) 0%, rgba(192, 204, 218, 0.6) 50.38%, rgba(192, 204, 218, 0.1) 100%);;
+    border-image: linear-gradient(90deg, rgba(192, 204, 218, 0.1) 0%, rgba(192, 204, 218, 0.6) 50.38%, rgba(192, 204, 218, 0.1) 100%);
     border-image-slice: 1;
 }
 .website{
@@ -213,7 +213,12 @@ body{
     margin: 0;
 }
 .payment-method{
-    transition: transform 0.3s;
+    border: 2px solid rgba(224, 44, 109, 0.3);
+    /* border-image:linear-gradient(90deg, rgba(192, 204, 218, 0.1) 0%, rgba(192, 204, 218, 0.6) 50.38%, rgba(192, 204, 218, 0.1) 100%); */
+    border-image-slice: 1;
+    border-radius: 10px;
+    padding: 10px;
+    transition: transform 0.2s;
 }
 .payment-method:hover{
     transform: scale(1.1);
