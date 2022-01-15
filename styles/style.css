@@ -10,81 +10,98 @@ body{
     color: #3A3A3A;
 }
 
-/*-----------------------------*\
-  # Navigation Bar Start:  
-\*-----------------------------*/
-.container{
+/*-------------------------*\
+  # Navigation Bar Styles:  
+\*-------------------------*/
+.header-container{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 87px 120px 0  120px;
+    padding: 60px 120px 0  100px;
+}
+.page-name-container{
+    position: relative;
 }
 .page-name{
-    font-size: 24px;
+    font-size: 20px;
+    position: absolute;
+    width: 300px;
+    margin: 0 auto;
+    transition: font-size 0.3s;
+}
+.page-name:hover{
+    font-size: 22px;
+}
+.page-name .fab{
+    color: #E02C6D;
 }
 .nav-bar{
     display: flex;
     list-style: none;
+    align-items: center;
 }
 .nav-bar li a{
     text-decoration: none;
     color:#3A3A3A;
-    font-size: 16px;
-    padding-right: 34px;
+    padding: 15px 25px;
+    border-radius: 5px;
+}
+.nav-bar .link a:hover{
+    background-color: #E02C6D;
+    color: white;
+}
+.nav-bar .icon a{
+    font-size: 22px;
 }
 
+/*------------------------*\
+  # Hearder items Styles:  
+\*------------------------*/
 
-/*-----------------------------*\
-  # Hearder items Start:  
-\*-----------------------------*/
 /* Header Left side */
-.header-texts .header{
-    font-size: 52px;
-    margin:0;
+.header-texts{
+    padding-right: 350px;
+}
+.header-text{
+    font-size: 50px;
 }
 .header-texts p{
-    font-size: 16px;
-    margin: 32px 0;
+    margin-top: 50px;
+    margin-bottom: 65px;
 }
 .header-texts button{
-    background-color: #E02C6D;
     width: 196px;
-    height: 44px;
+    height: 46px;
     border-radius: 40px;
     border: 1px solid #E02C6D;
-    transition: width 1s, background-color 1s;
+    background-color: #E02C6D;
+    transition: width 0.5s, background-color 0.5s;
 }
 .header-texts button:hover{
-    background-color: #e4447f;
-    width: 296px;
-    height: 44px;
+    width: 350px;
+    height: 46px;
 }
 .header-texts button a{
-    font-size:16px ;
-    color:white;
     text-decoration: none;
+    color:white;
+    font-size:16px ;
 }
-
 /* Header Right side */
-.header-image-border-circle{
+.header-border-image{
     width: 475px;
     height: 475px;
-    border: 3px solid #F1E4FF;
-    border-radius: 50%;
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.header-image-circle-fill{
-    position: absolute;
-    width: 350px;
-    height: 350px;
-    background-color:#F1E4FF;
-    border-radius: 50%;
+.header-border-image .main-camera{
+   transition: transform 0.5s;
 }
-.header-image-border-circle img{
-    position: absolute
+.header-border-image:hover .main-camera{
+    transform: scale(1.1) rotate(10deg);
+}
+.header-border-image img{
+    position: absolute;
 }
 
 /*-----------------------------*\
@@ -92,17 +109,17 @@ body{
 \*-----------------------------*/
 
 .websites-container{
-    margin: 120px;
+    margin: 150px 110px;
 }
 .websites{
     margin-top:7px;
     display: grid;
     grid-template-columns: repeat(7,1fr);
     grid-gap: 50px;
-    /* border: 3px solid gray; */
-    border: 2px solid #AAAAAA;
-    border-left: #AAAAAA;
-    border-right: #AAAAAA;
+    
+    border: 1px solid ;
+    border-image: linear-gradient(90deg, rgba(192, 204, 218, 0.1) 0%, rgba(192, 204, 218, 0.6) 50.38%, rgba(192, 204, 218, 0.1) 100%);;
+    border-image-slice: 1;
 }
 .website{
     display: flex;
@@ -128,16 +145,23 @@ body{
 .items{
     display: grid;
     grid-template-columns:repeat(3,1fr);
-    grid-gap: 40px;
-}
-.items img{
-    width: 300px;
-    height: 256px;
+    grid-gap: 30px;
 }
 .item{
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
-    padding: 15px;
+    padding: 20px;
     border-radius: 5px;
+    height:600px ;
+}
+.items img{
+    width: 100%;
+}
+
+.item .fas.rated{
+    color: rgba(255, 166, 0, 0.6);
+}
+.item .fas.unrated{
+    color: rgba(128, 128, 128, 0.4);
 }
 .see-more{
     display: flex;
@@ -150,7 +174,9 @@ body{
     font-size :16px;
 }
 
-/* payment */
+/*-----------------------------*\
+  Payment:  
+\*-----------------------------*/
 .payment-container{
     display: flex;
     justify-content: space-evenly;
@@ -166,7 +192,7 @@ body{
 }
 .payment-header h2{
     font-size: 30px;
-    margin-bottom: 500;
+    
 }
 .payment-methods{
     display: grid;
@@ -189,6 +215,15 @@ body{
     font-size: 60px;
     margin: 0;
 }
+.payment-method{
+    transition: transform 0.3s;
+}
+.payment-method:hover{
+    transform: scale(1.1);
+}
+/*-----------------------------*\
+  Footer:  
+\*-----------------------------*/
 footer{
     padding:50px 589px;
     background-color:#0A0826;
@@ -221,4 +256,8 @@ footer{
     border-radius: 50%;
     color: white;
     background-color: rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s;
+}
+.social-link a:hover{
+   transform: scale(1.2);
 }
