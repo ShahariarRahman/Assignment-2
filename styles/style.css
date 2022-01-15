@@ -8,6 +8,8 @@ body{
     /* font-family: 'Manrope', sans-serif; */
     font-family: 'Poppins', sans-serif;
     color: #3A3A3A;
+    max-width: 1920px;
+    margin: auto;
 }
 
 /*-------------------------*\
@@ -223,11 +225,12 @@ body{
 .payment-method:hover{
     transform: scale(1.1);
 }
-/*-----------------------------*\
-  Footer:  
-\*-----------------------------*/
+/*----------------*\
+  Footer Styles:  
+\*----------------*/
 footer{
-    padding:50px 600px;
+    padding-top :50px;
+    padding-bottom :50px;
     background-color:#0A0826;
     display: flex;
     flex-direction: column;
@@ -262,4 +265,115 @@ footer{
 }
 .social-link a:hover{
    transform: scale(1.4);
+}
+
+/*----------------*\
+  Media Queries:  
+\*----------------*/
+/* Mobile Devices */
+@media only screen  and (max-width:688px){
+    .body{
+        width: 500px;
+        margin: auto;
+    }
+    .nav-bar {
+        display: none;
+    }
+    .nav-bar li a{
+        padding: 0;
+        font-size: 30px;
+    }
+    .header-container {
+        display: flex;
+        align-items: center;
+        padding: 73px 50px 0px 50px;
+        flex-direction: column;
+    }
+    .nav-bar .icon a{
+        font-size: 22px;
+    }
+    .header-texts{
+         padding-right: 0px;
+    }
+    .websites-container {
+        margin: 0;
+    }
+    .websites{
+        grid-template-columns: repeat(1,1fr);
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .website{
+        height: 20px;
+    }
+    .header-border-image img {
+        width: 300px;
+    }
+    .collection-items-header h2 {
+        font-size: 32px;
+        text-align: center;
+        margin-top: 40px;
+    }
+    .items {
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 20px;
+    }
+    .item {
+        height: 490px;
+        width: 325px;
+    }
+    .see-more {
+        display: flex;
+        margin-top: 50px;
+        justify-content: space-around;
+    }
+    .payment-container {
+        margin-top: 65px;
+        flex-direction: column;
+    }
+    .payment-image {
+        display: flex;
+        justify-content: center;
+    }
+    .payment-image img {
+        border-radius: 10px;
+        width: 335px;
+    }
+    element.style {
+        display: flex;
+        justify-content: center;
+    }
+    .payment-header h2 {
+        font-size: 22px;
+        text-align: center;
+        margin: 50px;
+        font-size: 30px;
+    }
+    .payment-methods {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 10px;
+        padding: 0;
+        width: 250px;
+    }
+    .payment-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer{
+        padding: 0;
+        background-color: #0A0826;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+           
+}
+
+/* tablet devices */
+
+@media only screen and (min-width:689px) and (max-width:992px) {
+   
 }
