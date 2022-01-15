@@ -117,7 +117,8 @@ body{
 .collection-items{
     margin:0 120px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .collection-items-header h2{
@@ -138,4 +139,39 @@ body{
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
     padding: 15px;
     border-radius: 5px;
+}
+.see-more{
+    display: flex;
+    justify-content: flex-end;
+    margin: 50px 0;
+}
+.see-more a{
+    text-decoration: none;
+    color: rgba(224, 44, 109, 0.87);
+    font-size :16px;
+}
+
+/* payment */
+.payment-container{
+    display: flex;
+    justify-content: space-around;
+}
+.payment-image img{
+    border-radius: 10px;
+    margin-right:80px ;
+}
+
+.payment-header{
+    font-size: 30px;
+}
+.payment-methods{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+
+}
+.payment-methods h3{
+    font-size: 16px;
+}
+.payment-methods p{
+    font-size: 60px;
 }
