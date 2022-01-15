@@ -37,7 +37,7 @@ body{
 /*-----------------------------*\
   # Hearder items Start:  
 \*-----------------------------*/
-
+/* Header Left side */
 .header-texts .header{
     font-size: 52px;
     margin:0;
@@ -63,4 +63,26 @@ body{
     font-size:16px ;
     color:white;
     text-decoration: none;
+}
+
+/* Header Right side */
+.header-image-border-circle{
+    width: 475px;
+    height: 475px;
+    border: 3px solid #F1E4FF;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-image-circle-fill{
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    background-color:#F1E4FF;
+    border-radius: 50%;
+}
+.header-image-border-circle img{
+    position: absolute
 }
